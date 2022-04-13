@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        input {
+            width: 80px;
+            height: 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+
+        #botao {
+            background: pink;
+            width: 80px;
+            height: 26px;
+            border-radius: 8px;
+        }
+
+        #res {
+            margin-top: 10px;
+            width: 191px;
+            height: 23px;
+            line-height: 24px;
+            color: palevioletred;
+            border: 2px solid pink;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="text" name="txtn1" id="txtn1"> +
+    <input type="text" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()" id="botao">
+    <div id="res">Resultado...</div>
+
+    <script>
+        function somar() {
+            var tn1 = document.querySelector('input#txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var res = document.querySelector('div#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma é ${s} !`
+        }
+    </script>
+    
+</body>
+</html>
