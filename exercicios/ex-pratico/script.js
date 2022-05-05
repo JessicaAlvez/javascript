@@ -7,11 +7,14 @@ msg.innerHTML = `Agora são ${hora} horas.`
 
 if  (hora >=0 && hora < 12) {
     //Bom dia
-    //img.src = 'fotomanha.png' 
+    img.src = 'imagens/fotomanha.png' 
+    document.body.style.background = '#6194d4'
 } else if (hora >= 12 && hora < 18) {
     //Boa tarde
-    img.src = 'fototarde.png'
+    img.src = 'imagens/fototarde.png'
+    document.body.style.background = '#ffd055'
 } else {
     //Boa noite
-    img.src = 'fotonoite.png'
+    img.src = 'imagens/fotnoite.png'
+    document.body.style.background = '#464641'
 }

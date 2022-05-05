@@ -1,6 +1,7 @@
 body {
     background: lightblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
 }
 
 header {
@@ -23,8 +24,9 @@ footer {
     font-style:italic;
 }
 
-#msg {
-   margin: auto;
+div {
+    text-align:center;
+    padding: 10px;
 }
 
 #imagem {
